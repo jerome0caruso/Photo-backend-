@@ -17,7 +17,7 @@ const db = knex({
   // Enter your own database information here based on what you created
   client: 'pg',
   connection: {
-    host : '127.0.0.1',
+    host : 'postgresql-pointy-60870',
     user : 'postgres',
     password : 'Chopin00',
     database : 'photo'
@@ -56,3 +56,5 @@ app.put('/image', (req, res) =>{ images.handleImages(req, res, db)});
 app.listen(process.env.PORT || 3000, () => {
     console.log(`app is running on port ${process.env.PORT}!`)
 })
+
+

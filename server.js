@@ -34,7 +34,6 @@ app.get('/', (req, res) => {
     res.send('success');
 })
 app.get('/apikey', (req, res)=> {
-
   var ciphertext = CryptoJS.AES.encrypt('675f0da7db3f47428cb8c7a53f87da41', 'key').toString();
   res.json(ciphertext);
 
